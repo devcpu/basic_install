@@ -1,0 +1,15 @@
+---
+# tasks file for basic_install
+
+
+- name: install basic pkgs
+  apt:
+    name: "{{ basic_install_pkg_list }}"
+    state: present
+    update_cache: true
+
+- name: update apt-file cache
+  shell: apt-file update
+  changed_when: false
+
+

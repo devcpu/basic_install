@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  author: Johannes Arlt
+  description: installs apt-file and update cache
+  company: <johannes_arlt>
+
+
+
+  license: license CC-BY
+
+  min_ansible_version: 2.3
+
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+
+
+  
+dependencies: []

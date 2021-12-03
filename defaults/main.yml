@@ -1,0 +1,46 @@
+---
+
+system_vim_pkg_list:
+  - vim-nox
+  - vim-addon-manager
+  - vim-editorconfig
+  - vim-fugitive
+  - vim-lastplace
+  - vim-python-jedi
+  - vim-snippets
+  - vim-ultisnips
+
+basic_system_pkg_list:
+  - bash-completion
+  - apt-file
+  - command-not-found
+  - mc
+  - htop
+  - apt-utils
+  - git
+  - etckeeper
+  - bmon
+  - screen
+  - multitail
+  - sudo
+
+
+basic_network_pkg_list:
+  - net-tools
+  - rsync
+  - ngrep
+  - tcpdump
+  - iptraf
+  - wget
+  - curl
+  - nmap
+  - telnet
+  - hping3
+  - iperf
+
+
+basic_install_pkg_list: "{{ basic_system_pkg_list + system_vim_pkg_list + basic_network_pkg_list }}"
+
+
+
+
